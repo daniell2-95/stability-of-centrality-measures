@@ -1,0 +1,25 @@
+Many real world interactions can be modeled using complex networks,
+a mathematical structure in which a set of nodes are connected
+by edges, which represent the relationship between them.
+The amount of influence a node has in the network is quantified
+through a wide variety of centrality measures, each of which has a
+different interpretation. In the context of a particular network, it is
+unclear which centrality measure is the most meaningful. Here, we
+explore one method for comparing different centrality measures:
+their stability. In a given network, we calculate the centrality of
+the nodes using a particular measure. We then leave each node
+out from the network, creating an ensemble of similar networks
+and recomputing the centrality of the nodes. We define a measure
+using the Kendall-tau distance which counts the number of pairwise
+disagreements between the recomputed centrality ordering of
+the nodes and the original ordering. We illustrate this method by
+comparing the degree, betweenness, closeness, an eigenvector centrality
+on real and artificial networks. Our empirical networks are
+canonical examples: the Karate-Club, Jazz, Netscience, and Hep-
+Th networks. The two artificial networks are the preferential attachment
+and small world networks. We illustrate that stability
+can be used to distinguish between centrality measures and identify
+similarities within ensembles of networks. In future work, we
+hope to repeat this process on other networks in hopes of finding
+a definite relationship between the type of network and their most
+stable centrality measure.
